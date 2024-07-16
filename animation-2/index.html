@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        /* animation-1 */
+        .box{
+            border: 1px solid red;
+            width: 170px;
+            height: 170px;
+            background-color: blanchedalmond;
+            transition: all 1.5s linear, backgrond-color 2s ease-in 3s;
+        }
+        .box:hover{
+            width: 400px;
+            background-color: red;
+        }
+        /* animation-1 */
+        .box-2{
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            background-color: blanchedalmond;
+            transition: all 0.5s linear;
+        }
+        .box-2:hover{
+           transform: rotate(45deg) scale(1.1);
+        }
+    </style>
     <title>Document</title>
 </head>
 <body>
-    
+   <main>
+     <!-- animation-1 -->
+     <div>
+        <div class="box">box 1</div>
+     <div class="box">box 2</div>
+     <div class="box">box 3</div>
+     </div>
+     <!-- animation-2 -->
+     <div class="box2-container">
+     <div class="box-2">box 1</div>
+     <div class="box-2">box 2</div>
+     <div class="box-2">box 3</div>
+     </div>
+   </main>
 </body>
 </html>
