@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cricket height</title>
+    <style>
+        .field{
+            border: 1px solid aqua;
+        }
+        .bat{
+            transition: all 0.1s ease-in;
+        }
+        .field:hover .bat{
+            transform: rotate(-65deg);
+            transform-origin: top right;
+        }
+        .ball{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            position: relative;
+            left: 555px;
+            transition: all 1s ease-out 0.2s;
+        }
+        .field:hover .ball{
+            transform: translate(700px,-460px);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="field">
+        <img class="bat" src="./images/bat.png" alt="">
+        <div class="ball"></div>
+    </div>
 </body>
 </html>
