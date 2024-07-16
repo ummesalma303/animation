@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .container,.inner{
+            width: 150px;
+            height: 150px;
+        }
+        .container{
+            margin: 40px 90px;
+            background-color: aqua;
+            border: 3px solid rgb(146, 146, 207);
+        }
+        .inner{
+            background-color: rgb(231, 190, 154);
+            border: 3px solid rgb(197, 61, 61);
+            /* transform: scale(0.25,0.9); */
+            /* transform:scale(0.8) rotate(45deg); */
+            /* transform: translateX(30px) translateY(30px); */
+            transition: all 1s;
+        }
+        .inner:hover{
+            transform:scale(0.8) rotate(45deg) translateX(190px) translateY(-100px);
+        }
+    </style>
     <title>animation-1</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="inner">inner 1</div>
+        <!-- <div class="inner">inner 2</div>
+        <div class="inner">inner 3</div> -->
+    </div>
+    <div class="container">
+        <div class="inner">inner 1</div>
+        <!-- <div class="inner">inner 2</div>
+        <div class="inner">inner 3</div> -->
+    </div>
+    <div class="container">
+        <div class="inner">inner 1</div>
+        <!-- <div class="inner">inner 2</div>
+        <div class="inner">inner 3</div> -->
+    </div>
 </body>
 </html>
